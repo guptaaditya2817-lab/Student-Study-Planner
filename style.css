@@ -1,0 +1,329 @@
+/* Basic styling for the Student Study Plan website */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F7F9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+header {
+    background-color: #315A7D;
+    color: #FFFFFF;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #E89B3C;
+    border-bottom: 2px solid #E89B3C;
+}
+
+
+/* Main */
+
+main {
+    min-height: calc(100vh - 145px);
+    padding: 35px 0;
+}
+
+section {
+    background-color: #FFFFFF;
+    border: 1px solid #D9E0E5;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #315A7D;
+    margin-top: 0;
+}
+
+h3 {
+    color: #315A7D;
+}
+
+
+/* Home introduction */
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro h2 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+.intro img {
+    width: 42%;
+    max-height: 280px;
+    object-fit: cover;
+    border: 1px solid #D9E0E5;
+}
+
+
+/* Buttons */
+
+.button,
+button {
+    display: inline-block;
+    background-color: #315A7D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button:hover,
+button:hover {
+    background-color: #6C8EAD;
+}
+
+
+/* Home boxes */
+
+.three-boxes {
+    display: flex;
+    gap: 15px;
+}
+
+.info-box,
+.subject-box {
+    border: 1px solid #D9E0E5;
+    padding: 18px;
+    background-color: #F5F7F9;
+}
+
+.info-box {
+    flex: 1;
+}
+
+.info-box h3,
+.subject-box h3 {
+    margin-top: 0;
+}
+
+
+/* Goals */
+
+.goals ul {
+    padding-left: 25px;
+}
+
+
+/* Subjects */
+
+.subject-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.subject-box {
+    width: calc(50% - 8px);
+}
+
+
+/* Timetable */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th,
+td {
+    border: 1px solid #C8D0D6;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #315A7D;
+    color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F7F9;
+}
+
+
+/* Study tasks */
+
+.tasks {
+    max-width: 700px;
+}
+
+.task {
+    border: 1px solid #D9E0E5;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #F5F7F9;
+}
+
+.task label {
+    cursor: pointer;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
+
+.task.completed {
+    background-color: #E5F0E8;
+    text-decoration: line-through;
+}
+
+.task-message {
+    color: #38761D;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+
+/* Calculator */
+
+.calculator {
+    max-width: 700px;
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.calculator input {
+    width: 180px;
+    padding: 9px;
+    border: 1px solid #BFC8CF;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.result {
+    color: #315A7D;
+    font-weight: bold;
+}
+
+
+/* About */
+
+.about-section {
+    max-width: 800px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #315A7D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Mobile responsive design */
+
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .intro img {
+        width: 100%;
+    }
+
+    .intro h2 {
+        font-size: 28px;
+    }
+
+    .three-boxes {
+        flex-direction: column;
+    }
+
+    .subject-box {
+        width: 100%;
+    }
+
+    section {
+        padding: 18px;
+    }
+}

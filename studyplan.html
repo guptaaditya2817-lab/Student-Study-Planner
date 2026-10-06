@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Study Plan - Daily Plan</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container header-content">
+
+        <h1 class="logo">📚 STUDY PLAN</h1>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="subjects.html">Subjects</a>
+
+            <a href="timetable.html">Timetable</a>
+
+            <a class="active" href="study-plan.html">
+                Study Plan
+            </a>
+
+            <a href="about.html">About</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <section>
+
+        <h2>Daily Study Plan</h2>
+
+        <p>
+            Click the checkbox after completing each task.
+        </p>
+
+
+        <div class="tasks">
+
+
+            <div class="task">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="task-checkbox"
+                    >
+
+                    Revise today's lecture
+
+                </label>
+
+                <span class="task-message"></span>
+
+            </div>
+
+
+            <div class="task">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="task-checkbox"
+                    >
+
+                    Practice C programs
+
+                </label>
+
+                <span class="task-message"></span>
+
+            </div>
+
+
+            <div class="task">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="task-checkbox"
+                    >
+
+                    Read Web Designing notes
+
+                </label>
+
+                <span class="task-message"></span>
+
+            </div>
+
+
+            <div class="task">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="task-checkbox"
+                    >
+
+                    Complete pending assignment
+
+                </label>
+
+                <span class="task-message"></span>
+
+            </div>
+
+
+            <div class="task">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="task-checkbox"
+                    >
+
+                    Revise difficult topic
+
+                </label>
+
+                <span class="task-message"></span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="calculator">
+
+        <h2>Study-Time Calculator</h2>
+
+        <p>
+            Enter your planned study hours and break time.
+        </p>
+
+
+        <form id="studyForm">
+
+            <label for="studyHours">
+                Study Hours:
+            </label>
+
+            <input
+                type="number"
+                id="studyHours"
+                min="0"
+                value="2"
+            >
+
+
+            <label for="breakTime">
+                Break Time (minutes):
+            </label>
+
+            <input
+                type="number"
+                id="breakTime"
+                min="0"
+                value="30"
+            >
+
+
+            <button type="submit">
+                Calculate
+            </button>
+
+        </form>
+
+
+        <p
+            id="calculatorResult"
+            class="result"
+        ></p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 Student Study Plan | College Web Designing Project
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
